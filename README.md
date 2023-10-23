@@ -8,6 +8,7 @@ A list of various frappe installation methods documented for future reference.
       
   #### After creating a new username and password, run 
       sudo apt-get update
+  
       sudo apt-get upgrade
       
 <h3><b> Step 2: Install Frappe Pre-requisites </b></h3>
