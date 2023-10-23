@@ -16,13 +16,13 @@ A list of various frappe installation methods documented for future reference.
 <h3><b> Step 2: Install Frappe Pre-requisites </b></h3>
 
 #### We need to install the following prerequisite packages for Frappe V15
-    Python 3.12            yarn 1.12+  
+    Python 3.10 or 3.11    yarn 1.12+  
     Node.js 18             pip 20+ 
     MariaDB 10.6.6+        cron
     Redis 6                NGINX
     wkhtmltopdf (version 0.12.5 with patched qt)
 
-#### Python 3.12
+#### Python 3.10
     sudo apt-get install python3
 
 #### Node.js 18
