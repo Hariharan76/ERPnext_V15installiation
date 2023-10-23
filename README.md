@@ -9,8 +9,8 @@ A list of various frappe installation methods documented for future reference.
     
 #### After creating a new username and password, run 
     sudo apt-get update
+Followed by
 
-#### Followed by
     sudo apt-get upgrade
       
 <h3><b> Step 2: Install Frappe Pre-requisites </b></h3>
@@ -26,5 +26,9 @@ A list of various frappe installation methods documented for future reference.
     sudo apt-get install python3
 
 #### Node.js 18
+To install node.js we first install npm
+
     sudo apt-get install npm
-    
+Then we install the required version of node using
+
+    npm install node@18.12.0
