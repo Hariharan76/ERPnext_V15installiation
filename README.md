@@ -1,7 +1,7 @@
 # Frappe Web Framework Installation
 A list of various frappe installation methods documented for future reference.
 
-# Version 15
+## Version 15
 <h3><b> Step 1: Install WSL and Ubuntu </b></h3>
 
 #### In windows powershell (Run as Administrator) run 
