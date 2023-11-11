@@ -24,7 +24,7 @@ Followed by
     Node.js 18             yarn 1.12+ 
     MariaDB 10.6.6+        cron
     Redis 6                NGINX
-    wkhtmltopdf (version 0.12.5 with patched qt)
+    wkhtmltopdf (version 0.12.6 with patched qt)
 
 #### Python 3.10 & pip 20+
 Use the following command to install the latest version of python 3
@@ -61,3 +61,12 @@ Then we install the latest version of yarn using
 Run the following command to install the latest version of redis
 
     sudo apt-get install redis-server
+
+#### wkhtmltopdf 12.6 (with patched qt)
+Run the following set of commands to install the correct version of wkhtmltopdf and its dependencies
+
+    sudo apt-get install xfonts-75dpi
+    sudo apt-get install xfonts-base
+    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+    sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+    rm wkhtmltox_0.12.6.1-2.jammy_amd64.deb
