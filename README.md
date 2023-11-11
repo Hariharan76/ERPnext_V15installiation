@@ -32,14 +32,23 @@ The following command installs both the latest version of python 3 and pip
     sudo apt-get install python3
 
 #### Node.js 18
-To install node.js we first install npm
+To install node.js we first install nvm
 
-    sudo apt-get install npm
-Then we install the required version of node using
+    curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
-    npm install node@18.12.0
+To use nvm immediately, run
+    
+    source ~/.profile
+
+Then install the correct version of node using
+
+    nvm install 18.12.0
 
 #### Yarn 1.12+
-To install yarn use the following command from npm
+To install yarn we need to install npm first
+
+    sudo apt-get install npm
+
+Then we install the latest version of yarn using
 
     sudo npm install -g yarn
