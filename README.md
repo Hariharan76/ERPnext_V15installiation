@@ -27,10 +27,14 @@ Followed by
     wkhtmltopdf (version 0.12.5 with patched qt)
 
 #### Python 3.10 & pip 20+
-The following command installs both the latest version of python 3 and pip
+Use the following command to install the latest version of python 3
     
     sudo apt-get install python3
 
+Then run the following to install the latest version of pip
+
+    sudo apt install python3-pip
+    
 #### Node.js 18
 To install node.js we first install nvm
 
