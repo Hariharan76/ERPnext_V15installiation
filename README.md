@@ -36,3 +36,8 @@ To install node.js we first install npm
 Then we install the required version of node using
 
     npm install node@18.12.0
+
+#### Yarn 1.12+
+To install yarn use the following command from npm
+
+    sudo npm install -g yarn
