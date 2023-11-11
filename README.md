@@ -5,8 +5,12 @@ A list of various frappe installation methods documented for future reference.
 <h3><b> Step 1: Install WSL and Ubuntu </b></h3>
 
 #### In windows powershell (Run as Administrator) run 
-    wsl.exe --install ubuntu-22.04
-    
+    wsl --install -d ubuntu
+
+##### If you face an error while opening the installed distro in wsl (Even afterrestarting the system), try
+    wsl --update
+
+
 #### After creating a new username and password, run 
     sudo apt-get update
 Followed by
