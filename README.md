@@ -95,7 +95,7 @@ Now we need to make the following changes to the mariadb configurations
 
     sudo nano /etc/mysql/my.cnf
 
-Add the following to the end of the file
+Add the following to the end of the file and save
 
     [mysqld]
     character-set-client-handshake = FALSE
@@ -108,6 +108,11 @@ Add the following to the end of the file
 Then restart the server
 
     sudo service mysql restart
+
+Or stop and start the server if you face any issues with restart
+
+    sudo service mariadb stop
+    sudo service mariadb start
     
 <h3><b> Step 3: Install Frappe Bench </b></h3>
 Now that we've installed all the required prerequisites, we can install frappe.
