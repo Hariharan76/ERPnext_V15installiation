@@ -119,7 +119,7 @@ Install frappe bench using the following pip command
 
 Now init a new bench instance (You can give any name after init in the following command)
 
-    bench init frappe-bench
+    bench init frappe-bench --branch version-15
 
 #### Create a new site
 Now cd into the created bench folder (frappe-bench in this case) and create a new site.
@@ -129,3 +129,16 @@ Now cd into the created bench folder (frappe-bench in this case) and create a ne
 If you face an issue with the mariadb, start mariadb services and try creating a new site again.
 
     sudo service mariadb start
+
+Then provide an administrator password for the super admin account of this site.
+
+Give the following command to set the site as current site and to start the bench.
+
+    bench use site.local
+    bench start
+
+Alternatively, you can just start the bench and serve the site on a different port.
+
+    bench --site site.local serve --port 8069
+
+These are the steps to install frappe version 15.
