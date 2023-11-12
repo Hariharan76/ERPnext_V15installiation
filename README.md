@@ -75,3 +75,29 @@ Run the following set of commands to install the correct version of wkhtmltopdf 
     wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
     sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
     rm wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+
+#### mariadb 10.6.6+
+Run the following commands to install mariadb
+
+    sudo apt install software-properties-common
+    sudo apt-get update
+    sudo apt-get install mariadb-server
+    sudo mysql_secure_installation
+
+(During the initial input for root password, just press enter and when prompted to change the root password, change it.)
+
+Now we need to make the following changes to the mariadb configurations
+
+    sudo nano /etc/mysql/my.cnf
+
+Add the following to the end of the file
+
+    [mysqld]
+    character-set-client-handshake = FALSE
+    character-set-server = utf8mb4
+    collation-server = utf8mb4_unicode_ci
+
+    [mysql]
+    default-character-set = utf8mb4
+
+    
