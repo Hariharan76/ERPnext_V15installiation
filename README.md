@@ -100,4 +100,7 @@ Add the following to the end of the file
     [mysql]
     default-character-set = utf8mb4
 
+Then restart the server
+
+    sudo service mysql restart
     
