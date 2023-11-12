@@ -109,3 +109,23 @@ Then restart the server
 
     sudo service mysql restart
     
+<h3><b> Step 3: Install Frappe Bench </b></h3>
+Now that we've installed all the required prerequisites, we can install frappe.
+
+#### Frappe Bench
+Install frappe bench using the following pip command
+
+    sudo pip3 install frappe-bench
+
+Now init a new bench instance (You can give any name after init in the following command)
+
+    bench init frappe-bench
+
+#### Create a new site
+Now cd into the created bench folder (frappe-bench in this case) and create a new site.
+
+    bench new-site site.local
+
+If you face an issue with the mariadb, start mariadb services and try creating a new site again.
+
+    sudo service mariadb start
