@@ -4,7 +4,6 @@ A list of various frappe installation methods documented for future reference.
 ## Version 15
 <h3><b> Step 1: Install WSL and Ubuntu </b></h3>
 
-#### WSL 
 In windows powershell (Run as Administrator) run 
 
     wsl --install -d ubuntu
@@ -24,7 +23,7 @@ Followed by
       
 <h3><b> Step 2: Install Frappe Pre-requisites </b></h3>
 
-#### We need to install the following prerequisite packages for Frappe V15
+We need to install the following prerequisite packages for Frappe V15
 
     Python 3.10 or 3.11    pip 20+  
     Node.js 18             yarn 1.12+ 
