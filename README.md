@@ -39,6 +39,11 @@ Use the following command to install the latest version of python 3
 Then run the following to install the latest version of pip
 
     sudo apt install python3-pip
+
+We also need the venv package to install frappe
+
+    sudo apt-get install virtualenv
+    sudo apt install python3-venv
     
 #### Node.js 18
 To install node.js we first install nvm
